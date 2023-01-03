@@ -1,0 +1,22 @@
+.notifications-page-main {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px 25px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 25px hsl(211, 68%, 94%);
+}
+
+.notifications-page-main .notifications-space {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+@media screen and (max-width: 900px) {
+    .notifications-page-main {
+        padding: 15px 8px 15px;
+    }
+}
+

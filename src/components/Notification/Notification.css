@@ -1,0 +1,76 @@
+.notifications-page-main .notifications-space .notification {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.notifications-page-main .notifications-space .notification.new {
+    background-color: hsl(210, 60%, 98%);
+}
+
+.notifications-page-main .notifications-space .notification img {
+    width: 50px;
+}
+
+.notifications-page-main .notifications-space .notification .informations {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.notifications-page-main .notifications-space .notification .informations .description {
+    color: hsl(219, 12%, 42%);
+}
+
+.notifications-page-main .notifications-space .notification .informations .description .user-name {
+    color: initial;
+}
+
+.notifications-page-main .notifications-space .notification .informations .description .user-name,
+.notifications-page-main .notifications-space .notification .informations .description .post-name,
+.notifications-page-main .notifications-space .notification .informations .description .group-name {
+    cursor: pointer;
+}
+
+.notifications-page-main .notifications-space .notification .informations .description .user-name:hover,
+.notifications-page-main .notifications-space .notification .informations .description .post-name:hover, 
+.notifications-page-main .notifications-space .notification .informations .description .group-name:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.notifications-page-main .notifications-space .notification .informations .description 
+.new-notification-marker {
+    color: hsl(1, 90%, 64%);
+}
+
+.notifications-page-main .notifications-space .notification .informations .time {
+    color: hsl(219, 14%, 63%);
+}
+
+.notifications-page-main .notifications-space .notification .informations .private-message {
+    color: hsl(219, 12%, 42%);
+    padding: 12px 20px;
+    border: 1px solid hsl(205, 33%, 90%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.notifications-page-main .notifications-space .notification .informations .private-message:hover {
+    background-color: hsl(205, 33%, 90%);
+}
+
+.notifications-page-main .notifications-space .notification .picture {
+    margin: 0 0 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+    .notifications-page-main .notifications-space .notification {
+        gap: 12px;
+    }
+}
+
+
+
+
