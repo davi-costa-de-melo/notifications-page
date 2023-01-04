@@ -11,13 +11,13 @@ export default function Notification(props) {
 
             <div className='informations'>
                 <p className='description'>
-                    <strong className='user-name'>{props.userName}</strong> {{
-                        postReaction: <>reacted to your recent post <strong className='post-name'>{props.postName}</strong></>,
+                    <a className='user-name'>{props.userName}</a> {{
+                        postReaction: <>reacted to your recent post <a className='post-name'>{props.postName}</a></>,
                         newFollower: <>followed you</>,
-                        groupJoin: <>has joined your group <strong className='group-name'>{props.groupName}</strong></>,
+                        groupJoin: <>has joined your group <a className='group-name'>{props.groupName}</a></>,
                         privateMessage: <>sent you a private message</>,
                         pictureComment: <>commented on your picture</>,
-                        groupLeaving: <>left the group <strong className='group-name'>{props.groupName}</strong></>
+                        groupLeaving: <>left the group <a className='group-name'>{props.groupName}</a></>
                     }[props.type]}{props.isNew ? <span className='new-notification-marker'> ●</span> : ''}
                 </p>
 
@@ -25,7 +25,7 @@ export default function Notification(props) {
                     {props.time} ago
                 </p>
 
-                {props.type === 'privateMessage' ? <p className='private-message'>{props.message}</p> : <></>}
+                {props.type === 'privateMessage' ? <a className='private-message'>{props.message}</a> : <></>}
             </div>
                     
             {props.type === 'pictureComment' ? <img className='picture' src={props.picture} alt='your picture' /> : <></>}
