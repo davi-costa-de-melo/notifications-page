@@ -4,10 +4,17 @@
     gap: 18px;
     padding: 15px;
     border-radius: 8px;
+    transition: all .2s ease-in-out;
+}
+
+.notifications-page-main .notifications-space .notification:hover {
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
 }
 
 .notifications-page-main .notifications-space .notification.new {
     background-color: hsl(210, 60%, 98%);
+    cursor: pointer;
 }
 
 .notifications-page-main .notifications-space .notification img {
@@ -32,7 +39,6 @@
 .notifications-page-main .notifications-space .notification .informations .description .post-name,
 .notifications-page-main .notifications-space .notification .informations .description .group-name {
     font-weight: 800;
-    cursor: pointer;
 }
 
 .notifications-page-main .notifications-space .notification .informations .description .user-name:hover,
@@ -53,9 +59,8 @@
 .notifications-page-main .notifications-space .notification .informations .private-message {
     color: hsl(219, 12%, 42%);
     padding: 12px 20px;
-    border: 1px solid hsl(205, 33%, 90%);
+    border: 1px solid hsl(211, 68%, 94%);
     border-radius: 5px;
-    cursor: pointer;
 }
 
 .notifications-page-main .notifications-space .notification .informations .private-message:hover {

@@ -6,7 +6,7 @@ export default function Notification(props) {
     };
 
     return (
-        <section className={`notification ${toDashCase(props.type)}${props.isNew ? ' new' : ''}`}>
+        <section className={`notification ${toDashCase(props.type)}${props.isNew ? ' new' : ''}`} onClick={props.onClickMarkAsRead}>
             <img className='user-image' src={props.userImage} alt={`${props.userName}'s profile picture`} />
 
             <div className='informations'>
