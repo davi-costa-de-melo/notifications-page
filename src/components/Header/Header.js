@@ -6,7 +6,7 @@ export default function Header(props) {
             <div className='informations'>
                 <h1 className='title'>Notifications</h1>
 
-                {props.newNotificationsNumber ? <span className='new-notifications-number'>{props.newNotificationsNumber}</span> : <></>}
+                {props.newNotificationsNumber ? <p className='new-notifications-number'>{props.newNotificationsNumber}</p> : <></>}
             </div>
 
             <button className='mark-all-as-read-button' onClick={props.onClickMarkAllAsRead}>
