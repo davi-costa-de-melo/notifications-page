@@ -72,12 +72,13 @@
 }
 
 @media screen and (max-width: 768px) {
-    .notifications-page-main {
-        min-height: 100vh;
-    }
-
     .notifications-page-main .notifications-space .notification {
         gap: 12px;
+    }
+
+    .notifications-page-main .notifications-space .notification:hover {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
     }
 }
 
