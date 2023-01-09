@@ -4,7 +4,8 @@
     gap: 18px;
     padding: 15px;
     border-radius: 8px;
-    transition: all .2s ease-in-out;
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
 }
 
 .notifications-page-main .notifications-space .notification:hover {
